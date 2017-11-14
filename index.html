@@ -7,27 +7,28 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="gmaps.js"></script>
+<script type = "text/javascript">
+  var map;
+  $(document).ready(function(){
+    map = new GMaps ({
+      div: '#map',
+      lat: 38
+      lng: 138
+      zoom: 5
+    });
+  };
+</script>
+
+<style>
+  #map {
+    width: 400px;
+    height: 400px;
+  }
+</style>
 
 <body>
-  <h1>0.75期のトレーニング</h1>
-  <h2>中野飯編</h2>
-  <p>このトレーニングは、中野の食事処候補を提供することで、メンバの意気を高めることを目的とする。</p>
-  <script type = "text/javascript">
-    window.onload = function(){
-      var map = new GMaps ({
-          div: '#map',
-          lat: 38
-          lng: 138
-          zoom: 5
-      });
-    };
-  </script>
-  <style>
-    #map {
-      width: 400px;
-      height: 400px;
-    }
-  </style>
+
+
   
   <div id = "map"></div>
   
