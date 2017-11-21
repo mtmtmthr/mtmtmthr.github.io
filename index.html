@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <title>0.75期トレーニング</title>
     <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
+       #map {
+        height: 400px;
+        width: 100%;
+       }
     </style>
   </head>
   <body>
     <h3>Nakano_meshi</h3>
     <div id="map"></div>
     <script>
-      function initmap() {
-        var nakano = {lat: 35.703, lng: 139.662};
+      function initMap() {
+        var nakano = {lat: 35.7055, lng: 139.6653};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 15,
           center: nakano
         });
         var marker = new google.maps.Marker({
