@@ -5,23 +5,26 @@
     <title>0.75期トレーニング</title>
     <style>
        #map {
-        height: 400px;
-        width: 100%;
+        height: 600px;
+        width: 60%;
        }
     </style>
   </head>
   <body>
     <h3>Nakano_meshi</h3>
     <div id="map"></div>
-    <script>
+      <script>
+        var nakano_eki = {lat: 35.7055, lng: 139.6653};
+        var park_south = {lat: 35.7069, lng: 139.6615};
+      </script>
+      <script>
       function initMap() {
-        var nakano = {lat: 35.7055, lng: 139.6653};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
-          center: nakano
+          center: nakano_eki
         });
         var marker = new google.maps.Marker({
-          position: nakano,
+          position: park_south,
           map: map
         });
       }
